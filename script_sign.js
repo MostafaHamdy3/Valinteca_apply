@@ -62,7 +62,7 @@ function checkValid() {
 
   if (!userNameValue.match(checkName)) {
     errors.push({
-      user: "Username must consist of 5 to 15 characters, only letters and numbers are allowed, with no numbers at the beginning or the end",
+      user: "Username must consist of 5:15 characters, use only letters & numbers, no numbers at the beginning or the end",
     });
   }
 
@@ -111,5 +111,5 @@ function setError(input = "", message) {
     errorPassCheck.classList.add("hide");
     errorUser.classList.add("hide");
     errorEmail.classList.add("hide");
-  }, 5000);
+  }, 20000);
 }
