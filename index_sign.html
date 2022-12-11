@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Sign up Page</title>
+
+    <link href="style_sign.css" rel="stylesheet" />
+    <script defer src="script_sign.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="img"></div>
+
+        <div class="code">
+          <h2>Create Account</h2>
+          <p class="text">
+            Go ahead and sign up, let everyone know how awesome you are!
+          </p>
+
+          <form id="Form">
+            <div class="form-control">
+              <div class="form-control user">
+                <img class="img-icon" src="Images/user.png" />
+                <img src="Images/Divider.png" alt="" />
+                <input
+                  type="text"
+                  name="name"
+                  id="user"
+                  placeholder="Username"
+                />
+              </div>
+              <div id="errorUser" class="errorMessage hide user"></div>
+              <div class="form-control email">
+                <img class="img-icon" src="Images/mail.png" />
+                <img src="Images/Divider.png" alt="" />
+                <input
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder="Email"
+                />
+              </div>
+              <div id="errorEmail" class="errorMessage hide email"></div>
+              <div class="form-control password">
+                <img class="img-icon" src="Images/padlock.png" />
+                <img src="Images/Divider.png" alt="" />
+                <input
+                  type="password"
+                  name="password"
+                  id="pass"
+                  placeholder="Password"
+                />
+              </div>
+              <div id="errorPass" class="errorMessage hide password"></div>
+              <div class="form-control checkPassword">
+                <img class="img-icon" src="Images/padlock.png" />
+                <img src="Images/Divider.png" alt="" />
+                <input
+                  type="password"
+                  id="passCheck"
+                  placeholder="Confirm password"
+                />
+                <p id="errorCheck" class="errorMessage hide repassword"></p>
+              </div>
+            </div>
+
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
