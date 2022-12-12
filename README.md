@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-    <!-- - [Links](#links) -->
+    - [Links](#links)
     - [My process](#my-process)
       - [Built with](#built-with)
     - [Author](#author)
@@ -17,9 +17,9 @@
 ![](Images/Screenshot%202022-12-12%20005752.jpg)
 ![](Images/Screenshot%202022-12-12%20005818.jpg)
 
-<!-- ### Links -->
+### Links
 
-<!-- - Live Demo: [Vercel](https://valinteca-apply.vercel.app/) -->
+- Live Demo: [Vercel](https://valinteca-apply.vercel.app/)
 
 ## My process
 
