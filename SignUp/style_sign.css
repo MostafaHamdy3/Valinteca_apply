@@ -47,7 +47,6 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* row-gap: 24px; */
 }
 
 h2 {
@@ -118,11 +117,12 @@ input::placeholder {
 .errorMessage {
   color: #e93723;
   font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: -12px;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
 }
-
-/* .errorMessage.user {
-  padding: 0.5rem;
-} */
 
 .errorMessage {
   background-color: #ffeeee;
