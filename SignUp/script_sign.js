@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
     })
       .then((res) => res.json())
       .catch((err) => console.log(err));
-    location.replace("index_Success.html");
+    location.replace("../Success/index_Success.html");
   }
 });
 
@@ -111,5 +111,5 @@ function setError(input = "", message) {
     errorPassCheck.classList.add("hide");
     errorUser.classList.add("hide");
     errorEmail.classList.add("hide");
-  }, 20000);
+  }, 5000);
 }

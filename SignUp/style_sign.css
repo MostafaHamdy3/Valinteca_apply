@@ -6,7 +6,8 @@
 
 body {
   width: 1280px;
-  height: 835px;
+  font-family: "Fraunces", serif;
+  height: 1056px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,23 +23,20 @@ body {
   );
 }
 
-/* main {
-  width: 100%;
-} */
-
 .container {
   width: 1080px;
-  height: 435px;
+  height: 656px;
   display: flex;
   padding: 60px;
   gap: 60px;
-  background-color: rgba(245, 247, 255, 0.85);
+  background: rgba(245, 247, 255, 0.85);
   border-radius: 10px;
 }
 
 .img {
-  width: 570px;
-  background-image: url(Images/Image\ Placeholder.png);
+  width: 450px;
+  height: 536px;
+  background-image: url(../Images/Image\ Placeholder2.png);
   background-position: center;
   background-size: cover;
   border-bottom-left-radius: 10px;
@@ -49,30 +47,27 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   /* row-gap: 24px; */
 }
 
 h2 {
-  width: 315px;
-  height: 67px;
+  width: 450px;
+  height: 50px;
   font-style: normal;
-  font-size: 56px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 67px;
+  line-height: 50.4px;
   color: #2d2d2d;
   margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: left;
   @font-face {
     font-family: customfont;
-    src: url(fonts/abdoullah-ashgar-el-kharef.ttf);
+    src: url(../fonts/abdoullah-ashgar-el-kharef.ttf);
   }
 }
 
 .text {
   width: 450px;
-  height: 38px;
+  height: 76px;
   font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -82,22 +77,78 @@ h2 {
   margin-bottom: 40px;
 }
 
-a {
+.img-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.user,
+.email,
+.password,
+.checkPassword {
   width: 450px;
   height: 60px;
-  padding: 20px 50px;
-  color: #fff;
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input {
+  border: none;
+  width: 90%;
+  padding: 10px;
+}
+
+input::placeholder {
+  width: 369px;
+  height: 44px;
   font-size: 16px;
+  line-height: 22.4px;
+  color: #3b3b3b;
+}
+
+.errorMessage {
+  color: #e93723;
+  font-size: 14px;
+}
+
+/* .errorMessage.user {
+  padding: 0.5rem;
+} */
+
+.errorMessage {
+  background-color: #ffeeee;
+}
+
+.errorMessage.hide {
+  visibility: hidden;
+  display: none;
+}
+
+button {
+  width: 450px;
+  height: 60px;
+  padding: 0px 50px;
   line-height: 22.4px;
   background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
   box-shadow: 0px 6px 18px #9cadf2;
   border-radius: 10px;
+  margin-top: 10px;
   border: none;
-  text-decoration: none;
-  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /********************************
@@ -106,13 +157,13 @@ a {
 @media (max-width: 425px) {
   body {
     width: 375px;
-    height: 647px;
+    height: 931px;
     background: #fff;
   }
 
   .container {
     width: 375px;
-    height: 647px;
+    height: 931px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -124,16 +175,15 @@ a {
   .img {
     width: 315px;
     height: 315px;
-    background-image: url(Images/Image\ Placeholder.png);
     border-radius: 10px;
   }
 
   h2 {
-    height: 50px;
-    font-size: 42px;
-    margin-bottom: 10px;
-    line-height: 50.4px;
-    margin-top: -10px;
+    width: 315px;
+    height: 38px;
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 38.4px;
   }
 
   .text {
@@ -145,7 +195,16 @@ a {
     margin-left: -60px;
   }
 
-  a {
+  .user,
+  .email,
+  .password,
+  .checkPassword {
+    width: 315px;
+    height: 60px;
+    margin-left: -60px;
+  }
+
+  button {
     margin-left: -60px;
     width: 315px;
     height: 60px;
